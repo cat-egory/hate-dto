@@ -1,0 +1,30 @@
+<idea-plugin>
+  <id>xyz.low-battery.hate-dto</id>
+  <name>First Plug In</name>
+  <version>1.0</version>
+  <vendor email="xtheblackeyes@gmail.com" url="https://blog.low-battery.xyz/">Cat-egory</vendor>
+
+  <change-notes><![CDATA[
+    I'm tired typing lombok DTO.<br>
+    So I made this. DataGrip with this plugin makes you Happy!<br>
+    ]]></change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="HateDto.testAction" class="testAction" text="Hello Hate Dto">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
